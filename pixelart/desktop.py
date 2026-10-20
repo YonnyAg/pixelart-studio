@@ -10,9 +10,25 @@ ASSETS_DIR = Path(__file__).resolve().parent.parent / "assets"
 APP_ID = "PixelArtStudio.Desktop.1"
 
 
+def has_package_identity():
+    """Windows asigna su propia identidad a una aplicación instalada por MSIX."""
+    if sys.platform != "win32":
+        return False
+    get_package = ctypes.windll.kernel32.GetCurrentPackageFullName
+    get_package.argtypes = [ctypes.POINTER(ctypes.c_uint32), ctypes.c_wchar_p]
+    get_package.restype = ctypes.c_long
+    length = ctypes.c_uint32(0)
+    result = get_package(ctypes.byref(length), None)
+    if result == 15700:  # APPMODEL_ERROR_NO_PACKAGE
+        return False
+    if result in (0, 122):  # ERROR_SUCCESS / ERROR_INSUFFICIENT_BUFFER
+        return length.value > 0
+    raise ctypes.WinError(result)
+
+
 def configure_app_identity():
     """Se ejecuta antes de crear ventanas para identificar el proceso en Windows."""
-    if sys.platform == "win32":
+    if sys.platform == "win32" and not has_package_identity():
         set_app_id = ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID
         set_app_id.argtypes = [ctypes.c_wchar_p]
         set_app_id.restype = ctypes.c_long
