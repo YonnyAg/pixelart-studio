@@ -1,0 +1,7 @@
+{
+  "name": "COPIAR-Package.Identity.Name",
+  "publisher": "CN=COPIAR-Package.Identity.Publisher",
+  "publisher_display_name": "COPIAR-Package.Properties.PublisherDisplayName",
+  "display_name": "PixelArt Studio",
+  "version": "1.0.0.0"
+}

@@ -11,3 +11,4 @@ release/
 .venv/
 .env.*
 !.env.example
+store/identity.local.json

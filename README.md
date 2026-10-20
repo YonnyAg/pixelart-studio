@@ -148,6 +148,11 @@ puede requerir volver a fijar la aplicación.
 
 ## Repositorio, versiones y contribuciones
 
+La publicación en Microsoft Store está en preparación. La [guía para Microsoft
+Store](store/README.md) explica el registro, la identidad del producto y la generación
+del MSIX. Todavía no hay una ficha de Store aprobada. Consulta también la
+[política de privacidad](PRIVACY.md).
+
 El proyecto es **software libre y de código abierto bajo [licencia MIT](LICENSE)**.
 Puedes utilizarlo, modificarlo y distribuirlo conservando los avisos de la licencia.
 
