@@ -22,6 +22,13 @@ CustomTkinter y Pillow. Procesamiento local, sin cuentas ni servicios externos.
 
 ## Descargar para Windows
 
+**[Instalar PixelArt Studio desde Microsoft Store](https://apps.microsoft.com/detail/9N18J6HDCHTS)**
+
+La aplicación ya está publicada en Microsoft Store. Esta es la opción recomendada
+para instalarla y recibir actualizaciones mediante la tienda.
+
+### Descargas portables de GitHub
+
 **[⬇ Descargar PixelArt Studio (.exe)](https://github.com/YonnyAg/pixelart-studio/releases/latest/download/PixelArtStudio-1.0.0-windows-x64.exe)**
 
 [ZIP portable](https://github.com/YonnyAg/pixelart-studio/releases/latest/download/PixelArtStudio-1.0.0-windows-x64.zip)
@@ -31,7 +38,7 @@ CustomTkinter y Pillow. Procesamiento local, sin cuentas ni servicios externos.
 
 Requiere **Windows 10/11 de 64 bits**. No requiere Python ni permisos de administrador.
 
-### Opción recomendada: EXE independiente
+### Alternativa: EXE independiente
 
 Descarga `PixelArtStudio-1.0.0-windows-x64.exe` y ábrelo con doble clic. Es un
 archivo autocontenido: no tienes que instalar dependencias ni descargar la carpeta
@@ -100,7 +107,9 @@ sin relación en **Comparar**. Para comparar, abre y convierte una imagen.
 ## Datos personales
 
 - Desde el código fuente: `data/` en el proyecto, excluido de Git.
-- Desde el ejecutable: `%LOCALAPPDATA%/PixelArtStudio/`, fuera del paquete.
+- Desde el ejecutable portable: `%LOCALAPPDATA%/PixelArtStudio/`, fuera del paquete.
+- Desde Microsoft Store: Windows puede redirigir esa ubicación al almacenamiento
+  privado del paquete. Consulta la [política de privacidad](PRIVACY.md).
 
 La base SQLite contiene historial y presets; los resultados se conservan como PNG.
 Los datos creados durante el desarrollo no se incluyen en el ZIP ni se trasladan
@@ -148,10 +157,10 @@ puede requerir volver a fijar la aplicación.
 
 ## Repositorio, versiones y contribuciones
 
-La publicación en Microsoft Store está en preparación. La [guía para Microsoft
-Store](store/README.md) explica el registro, la identidad del producto y la generación
-del MSIX. Todavía no hay una ficha de Store aprobada. Consulta también la
-[política de privacidad](PRIVACY.md).
+PixelArt Studio está [publicado en Microsoft Store](https://apps.microsoft.com/detail/9N18J6HDCHTS)
+desde el 21 de octubre de 2026. La [guía para Microsoft Store](store/README.md)
+documenta el registro, la identidad del producto y la generación del MSIX para
+futuras actualizaciones. Consulta también la [política de privacidad](PRIVACY.md).
 
 El proyecto es **software libre y de código abierto bajo [licencia MIT](LICENSE)**.
 Puedes utilizarlo, modificarlo y distribuirlo conservando los avisos de la licencia.
@@ -206,16 +215,20 @@ JPEG si quieres componer esas zonas sobre blanco.
 configuración**, elige un nombre y después selecciónalo en el menú de presets.
 Al aplicar un preset, pulsa **Crear PixelArt** para generar un nuevo resultado.
 
-**¿Cómo hago una copia de seguridad?** Cierra la aplicación y copia toda la carpeta
+**¿Cómo hago una copia de seguridad de la versión portable?** Cierra la aplicación y copia toda la carpeta
 `%LOCALAPPDATA%/PixelArtStudio/`. Guarda juntos la base SQLite y los PNG. Para
 restaurar, cierra la aplicación y devuelve la copia a esa ubicación.
 
-**¿Cómo actualizo?** Descarga el nuevo EXE, cierra la versión anterior y abre el
+**¿Cómo actualizo?** Si la instalaste desde Microsoft Store, utiliza las
+actualizaciones de la tienda. Para la versión portable, descarga el nuevo EXE,
+cierra la versión anterior y abre el
 archivo nuevo. Si usas el ZIP, extrae la nueva versión en una carpeta aparte y
 conserva todos sus archivos. Tus presets e historial siguen en tu perfil de usuario.
 
-**¿Cómo desinstalo?** Cierra el programa y elimina el EXE o su carpeta portable.
-Los datos de usuario permanecen en la ubicación indicada; puedes conservarlos como
+**¿Cómo desinstalo?** La versión de Microsoft Store se desinstala desde
+Configuración de Windows → Aplicaciones. Para la versión portable, cierra el
+programa y elimina el EXE o su carpeta.
+En la versión portable, los datos de usuario permanecen en la ubicación indicada; puedes conservarlos como
 respaldo o eliminarlos si ya no los necesitas.
 
 **¿Se suben mis imágenes a Internet?** El procesamiento y el historial de la

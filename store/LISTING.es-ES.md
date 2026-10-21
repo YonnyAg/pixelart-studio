@@ -1,7 +1,8 @@
-# Borrador de ficha para Microsoft Store
+# Textos de referencia para la ficha de Microsoft Store
 
-Estado: preparado para revisión; no enviado ni aprobado por Microsoft.
-El nombre final debe coincidir con el reservado en Partner Center.
+Estado: aplicación publicada el 21 de octubre de 2026.
+Ficha pública: https://apps.microsoft.com/detail/9N18J6HDCHTS
+Estos textos son una referencia para mantener y actualizar la ficha.
 
 ## Nombre propuesto
 
@@ -61,7 +62,7 @@ Para probar: abrir una imagen de ejemplo, elegir cuadrícula 64 × 64 y escala 8
 crear PixelArt, revisar Comparar y exportar a PNG. También se pueden guardar
 presets y eliminar creaciones del historial. No hay credenciales de prueba.
 
-## Material que falta completar en Partner Center
+## Elementos que revisar en futuras actualizaciones de Partner Center
 
 - Nombre reservado y valores de identidad reales.
 - Capturas reales de la aplicación según las medidas exigidas por el portal.

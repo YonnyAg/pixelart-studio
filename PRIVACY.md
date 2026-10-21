@@ -1,6 +1,6 @@
 # Política de privacidad de PixelArt Studio
 
-Última actualización: 20 de octubre de 2026.
+Última actualización: 21 de octubre de 2026.
 
 PixelArt Studio procesa imágenes localmente. La aplicación no requiere cuentas,
 no incorpora publicidad ni telemetría y no envía imágenes, presets o historial
@@ -28,8 +28,9 @@ un paquete MSIX depende del almacenamiento administrado por Windows.
 
 ## Servicios externos
 
-La distribución se realiza a través de GitHub y, si se aprueba su publicación,
-Microsoft Store. Estos servicios aplican sus propias políticas a las descargas,
+La distribución se realiza a través de GitHub y
+[Microsoft Store](https://apps.microsoft.com/detail/9N18J6HDCHTS).
+Estos servicios aplican sus propias políticas a las descargas,
 cuentas y transacciones realizadas en sus plataformas. La aplicación de escritorio
 no añade seguimiento propio ni comparte tus imágenes con ellos.
 

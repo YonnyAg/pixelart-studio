@@ -1,8 +1,11 @@
 # Publicación en Microsoft Store
 
-Estado: preparación técnica. Todavía no existe un paquete con identidad de Store
-confirmada ni una publicación aprobada. Este flujo usa **MSIX**, no la opción
-de enviar una URL de un instalador EXE/MSI sin firma.
+Estado: publicación aprobada y disponible desde el 21 de octubre de 2026.
+
+**[PixelArt Studio en Microsoft Store](https://apps.microsoft.com/detail/9N18J6HDCHTS)**
+
+Identidad del producto: `YonnyAg.PixelArtStudio`; editor: `YonnyAg`.
+Esta guía conserva los pasos para preparar futuras actualizaciones mediante MSIX.
 
 ## 1. Registro que completa el propietario
 
@@ -66,7 +69,7 @@ Podemos preparar y rellenar los campos técnicos; la identidad, los acuerdos y
 las declaraciones del propietario los completa o revisa el propietario.
 
 La publicación no es inmediata ni está garantizada: queda sujeta a revisión.
-El enlace de Microsoft Store se añade al README cuando exista una ficha publicada.
+El enlace público de Microsoft Store ya está incluido en el README principal.
 La aprobación de Store no elimina por sí sola los avisos del EXE externo de GitHub.
 
 ## Referencias oficiales
